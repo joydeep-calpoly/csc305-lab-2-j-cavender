@@ -1,5 +1,6 @@
 package tasktwo;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
@@ -8,19 +9,12 @@ class Dignitary {
   private List<Award> awards;
   private List<String> knownFor;
 
-  @JsonProperty("name")
-  private String getName() {
-    return name;
-  }
-
-  @JsonProperty("awards")
-  private List<Award> getAwards() {
-    return awards;
-  }
-
-  @JsonProperty("knownFor")
-  private List<String> getKnownFor() {
-    return knownFor;
+  @JsonCreator
+  private Dignitary(@JsonProperty("name") String name, @JsonProperty("awards") List<Award> awards,
+                    @JsonProperty("knownFor") List<String> knownFor) {
+    this.name = name;
+    this.awards = awards;
+    this.knownFor = knownFor;
   }
 
   public String toString() {
