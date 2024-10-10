@@ -7,12 +7,12 @@ public class Award {
   private int year;
 
   @JsonProperty("name")
-  public String getName() {
+  private String getName() {
     return name;
   }
 
   @JsonProperty("year")
-  public int getYear() {
+  private int getYear() {
     return year;
   }
 

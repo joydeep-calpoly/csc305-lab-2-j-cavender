@@ -9,17 +9,17 @@ public class Dignitary {
   private List<String> knownFor;
 
   @JsonProperty("name")
-  public String getName() {
+  private String getName() {
     return name;
   }
 
   @JsonProperty("awards")
-  public List<Award> getAwards() {
+  private List<Award> getAwards() {
     return awards;
   }
 
   @JsonProperty("knownFor")
-  public List<String> getKnownFor() {
+  private List<String> getKnownFor() {
     return knownFor;
   }
 
