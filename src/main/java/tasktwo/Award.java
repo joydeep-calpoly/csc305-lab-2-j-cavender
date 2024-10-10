@@ -2,7 +2,7 @@ package tasktwo;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Award {
+class Award {
   private String name;
   private int year;
 

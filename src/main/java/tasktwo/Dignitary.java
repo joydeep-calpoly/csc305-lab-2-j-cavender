@@ -3,7 +3,7 @@ package tasktwo;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
-public class Dignitary {
+class Dignitary {
   private String name;
   private List<Award> awards;
   private List<String> knownFor;
