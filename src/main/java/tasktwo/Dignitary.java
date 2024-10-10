@@ -5,9 +5,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
 class Dignitary {
-  private String name;
-  private List<Award> awards;
-  private List<String> knownFor;
+  private final String name;
+  private final List<Award> awards;
+  private final List<String> knownFor;
 
   @JsonCreator
   private Dignitary(@JsonProperty("name") String name, @JsonProperty("awards") List<Award> awards,
